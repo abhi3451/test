@@ -42,5 +42,45 @@ console.dir(document)
     
 
 //  }
- 
+
+//CREATING NODE AND MODIFYING DOM
+//var itemlist=document.querySelector("#items")
+//CREATE PARENTELEMENT
+// console.log(itemlist.parentNode)
+// lastElementChild
+//console.log(itemlist.lastElementChild)
+/*console.log(itemlist.firstElementChild)
+ itemlist.firstElementChild.textContent="Hello"
+ itemlist.firstElementChild.style.fontWeight="bold"*/
+
+
+//   var text=document.createElement('text')
+//   text.className="list-group-item"
+//   var newtext=document.createTextNode('Hello')
+//   text.appendChild(newtext)
+//   var listgroupitem=document.querySelector('ul')
+//   var li=document.querySelector('ul li')
+//  listgroupitem.insertBefore(text,li)
+
+
+//console.log(itemlist.previousSibling)
+//console.log(itemlist.nextSibling)
+// console.log(itemlist.nextElementSibling)
+// console.log(itemlist.previousElementSibling)
+
+
+//  var newDiv=document.createElement('div')
+//   newDiv.setAttribute('title','Hello Div')
+//  newDiv.className="Hello"
+//  newDiv.id="Hello1"
+//  // //create textnode
+//  newDivText=document.createTextNode('Hello world')
+//  newDiv.appendChild(newDivText)
+//  var container=document.querySelector('header .container')
+//  var h1=document.querySelector('header h1')
+// //console.log(h1)
+//  container.insertBefore(newDiv,h1)
+
+
+
  
