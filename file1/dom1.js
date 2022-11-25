@@ -25,6 +25,10 @@ console.dir(document)
 //Queryselector
 // var seconditem=document.querySelector('.list-group-item:nth-child(2)')
 // seconditem.style.background="green"
+// var thirditem=document.querySelector('.list-group-item:nth-child(3)')
+// thirditem.style.visibility="hidden"  
+//or other method is
+// thirditem.style.display="none"
 
 
 
