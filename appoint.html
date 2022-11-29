@@ -11,11 +11,12 @@
 
 <title>Registration form</title>
 <style>
-    body
+    /* body
     {
         text-align: center;
-    }
-    form input {
+    } */
+    form{
+      text-align: center;
     margin-right: 3%;
     margin-top: 2%;
       padding: 2px;}
@@ -25,9 +26,10 @@
   <form onsubmit="register(event)">
     <label>Name:</label><input type="text" id="name" required/>
     <label>Email:</label><input type="text" id="mail" required/>
-    <label>Phone number:</label><input type=number id="number" required/><br/><br/><br/>
-    <button id="submit">submit</button>
+    <label>Phone number:</label><input type=number id="number" required/><br/><br/>
+    <input type="submit" id="submit" value="submit">
   </form>
+  <ul id="listofUsers"></ul>
   <script>
 function register(event)
 {
@@ -42,6 +44,12 @@ event.preventDefault();
  }
  localStorage.setItem('user-details',JSON.stringify(obj))
 } 
+function  showNewuseronScreen(user)
+{
+  const parentNode=document.getElementById('listofUsers');
+  const childHTML=`<li> ${user.name}-${user.mail} </li>`
+parentNode.innerHTML+=childHTML;
+}
  </script>
  
 
